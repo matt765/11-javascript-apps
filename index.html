@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>JavaScript Portfolio</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Nothing+You+Could+Do&display=swap"
+         rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@1,500&family=Teko:wght@500&display=swap"
+         rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Oswald&display=swap"
+         rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Righteous&display=swap"
+         rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Overlock&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=BenchNine&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+      <link
+         href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel+Decorative:wght@700&family=Luckiest+Guy&family=Oregano&display=swap"
+         rel="stylesheet">
+      <link href="css/all.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
+      <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+         crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+         crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+         crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <div class="headerTitle" data-aos="fade" data-aos-duration="3000">
+         <h1> Javascript</h1>
+         <img src="img/underline.png">
+      </div>
+      <section id="wrapper" data-aos="fade" data-aos-duration="2000">
+         <div class="containerJS">
+            <ul class="accordion border rounded">
+               <li class="item">
+                  <h2 class="accordionTitle">Cats and Dogs <span class="accIcon"></span></h2>
+                  <div class="text" id="petsContainer">
+                     <div class="cats">
+                        <div class="pets-result" id="cat"></div>
+                        <button class="btn btn-secondary" id="cat-btn">Get random cat</button>
+                     </div>
+                     <div class="dogs">
+                        <div class="pets-result" id="dog"></div>
+                        <button class="btn btn-secondary" id="dog-btn">Get random dog</button>
+                     </div>
+                  </div>
+               </li>
+               <li class="item">
+                  <h2 class="accordionTitle">Weather Forecast <span class="accIcon"></span></h2>
+                  <div class="text">
+                     <div class="weatherContainer">
+                        <div id="weather">
+                           <div id="description"></div>
+                           <h1 id="temp"></h1>
+                           <div id="pressure"></div>
+                           <div id="location"></div>
+                        </div>
+                        <form id="weatherForm">
+                           <input type="text" id="city" placeholder="City" required>
+                           <button class="btn btn-secondary">Get weather!</button>
+                        </form>
+                        <p id="noCity" class="invisible">This city does not exist!</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="item">
+                  <h2 class="accordionTitle">Let's have a drink <span class="accIcon"></span></h2>
+                  <div class="text">
+                     <div class="drink-fields">
+                        <h2> In this section you can get random drink description or write it's name in a field
+                           below
+                        </h2>
+                        <button id="drink" class="btn btn-secondary align-middle">Get random drink</button>
+                        <hr>
+                        <div class="tooltip88">
+                           <form id="drinkForm"><input type="text" id="drink-input" placeholder="Drink"> <span
+                              class="tooltiptext88">
+                              Examples: Margarita, GG, Pink Gin, Grasshopper, Dragonfly</span>
+                        </div>
+                        <button class="btn btn-secondary" id="drink123">Get drink</button></form>
+                        <hr>
+                     </div>
+                     <div class="random-drink">
+                        <div class="card">
+                           <div class="card-body">
+                              <div class="drinkRow">
+                                 <div class="drinkHeader">
+                                    <h5 id="random-drink-name" class="card-title">Card title</h5>
+                                    <section id="drink-section">
+                                    </section>
+                                 </div>
+                                 <div id="random-drink-img"></div>
+                              </div>
+                              <p id="random-drink-instruction" class="card-text">Some quick example text to build
+                                 on
+                                 the card
+                                 title and make up the bulk of the card's content.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="item">
+                  <h2 class="accordionTitle">Dynamic table <span class="accIcon"></span></h2>
+                  <div class="text">
+                     <h2 class="tableTitle"> This script downloads JSON data from public API and creates a table with
+                        sorting and drag'n'drop (PC) options for it 
+                     </h2>
+                     <div class="userButtons">
+                        <button class="btn btn-primary" id="getUsers">Get list of users</button>
+                        <hr>
+                        <br>
+                     </div>
+                     <div class="tableContainer">
+                        <table id="usersTable"></table>
+                     </div>
+                  </div>
+               </li>
+               <li class="item">
+                  <h2 class="accordionTitle">Plan your day <span class="accIcon"></span></h2>
+                  <div class="text">
+                     <div class="container7 d-flex align-items-center">
+                        <div class="plannerBox  shadow-lg">
+                           <p class="plannerTitle">Daily Planner</p>
+                           <div class="newTaskContainer">
+                              <input type="text" id="taskInput" class="form-control" value="What to do next?"
+                                 maxlength="50">
+                              <div class="addTask" id="addTask">
+                                 <p>
+                                 <div class="a_demo_three">
+                                    Add task
+                                 </div>
+                                 </p>
+                              </div>
+                           </div>
+                           <div class="taskContainer" id="taskList">
+                              <div class="singleTask">
+                                 <p>Read a book</p>
+                                 <div class="removeTask">
+                                    <i class="far fa-trash-alt" bin></i>
+                                 </div>
+                              </div>
+                              <div class="singleTask">
+                                 <p>Metting with team</p>
+                                 <div class="removeTask">
+                                    <i class="far fa-trash-alt" bin></i>
+                                 </div>
+                              </div>
+                              <div class="singleTask">
+                                 <p>Fix a printer</p>
+                                 <div class="removeTask">
+                                    <i class="far fa-trash-alt" bin></i>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="item">
+                  <h2 class="accordionTitle">Simple Logo Creator <span class="accIcon"></span></h2>
+                  <div class="text logoCreator">
+                     <div id="fancy-container" class="fancy-container border border-secondary">
+                        <div id="fancy-text" class="fancy-text">
+                           The quick brown fox jumps over the lazy dog
+                        </div>
+                     </div>
+                     <div class="updateText">
+                        <input type="text" class="form-control" id="fancyContent" autocomplete="off"
+                           value="The quick brown fox jumps over the lazy dog">
+                        <button type="submit" class="btn btn-secondary updateTextButton"
+                           onclick="fancyContent()">Update
+                        text</button>
+                     </div>
+                     <div class="fancy-options">
+                        <div class="optionsBox">
+                           <h4>Font family</h4>
+                           <select class="form-control" id="fancyFont" onchange="fancyFont()">
+                              <option value="Amatic SC">Amatic SC</option>
+                              <option value="Alex Brush">Alex Brush</option>
+                              <option value="Cinzel Decorative">Cinzel Decorative</option>
+                              <option value="Luckiest Guy">Luckiest Guy</option>
+                              <option value="Oregano">Oregano</option>
+                           </select>
+                        </div>
+                        <br> <br>
+                        <div class="optionsBox">
+                           <h4>Font size</h4>
+                           <select class="form-control" id="fancySize" onchange="fancySize()">
+                              <option value="2em">Small</option>
+                              <option value="3em">Medium</option>
+                              <option value="4em">Large</option>
+                           </select>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="optionsBox">
+                           <h4>Font color</h4>
+                           <select class="form-control" id="fancyColor" onchange="fancyColor()">
+                              <option value="#ff793f">Synthetic Pumpkin</option>
+                              <option value="#ff6b81">Wild Watermelon</option>
+                              <option value="lightblue">Light Blue</option>
+                              <option value="limegreen">Lime Green</option>
+                              <option value="#40407a">Jacksons Purple</option>
+                           </select>
+                        </div>
+                        <br> <br>
+                        <div class="optionsBox">
+                           <h4>Background color</h4>
+                           <select class="form-control" id="fancyBg" onchange="fancyBg()">
+                              <option value="#ff793f">Synthetic Pumpkin</option>
+                              <option value="#ff6b81">Wild Watermelon</option>
+                              <option value="lightblue">Light Blue</option>
+                              <option value="limegreen">Lime Green</option>
+                              <option value="#40407a">Jacksons Purple</option>
+                           </select>
+                        </div>
+                        <br> <br>
+                        <div class="optionsBox">
+                           <h4>Border</h4>
+                           <select class="form-control" id="fancyBorder" onchange="fancyBorder()">
+                              <option value="border-light">None</option>
+                              <option value="border-secondary">Dark</option>
+                              <option value="border-primary">Blue</option>
+                              <option value="border-success">Green</option>
+                              <option value="border-danger">Red</option>
+                              <option value="border-warning">Yellow</option>
+                           </select>
+                           <br> <br>
+                        </div>
+                     </div>
+                     <button id="reset" type="submit" class="btn btn-secondary d-flex justify-content-center"
+                        onclick="resetFancy()">Back to default</button>
+                  </div>
+               </li>
+               <li class="item">
+                  <h2 class="accordionTitle">Bitcoin price <span class="accIcon"></span></h2>
+                  <div class="text">
+                     <div class="btc">
+                        <h2> Created using Charts.js library </h2>
+                        <div class="bitcoinContainer">
+                           <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+                              <li class="nav-item">
+                                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home"
+                                    role="tab" aria-controls="home" aria-selected="true">2018</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile"
+                                    role="tab" aria-controls="profile" aria-selected="false">2019</a>
+                              </li>
+                           </ul>
+                           <div class="tab-content border border-top-0 rounded" id="myTabContent">
+                              <div class="tab-pane  show active" id="home" role="tabpanel"
+                                 aria-labelledby="home-tab">
+                                 <div class="chartContainer">
+                                    <canvas id="myChart"></canvas>
+                                 </div>
+                              </div>
+                              <div class="tab-pane " id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                 <div class="chartContainer">
+                                    <canvas id="myChart2"></canvas>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <h2> Note: because of monthly values, this example is not accurate - real price charts are
+                           changing every
+                           few minutes 
+                        </h2>
+                     </div>
+                  </div>
+               </li>
+               <li class="item">
+                  <h2 class="accordionTitle">Calculator <span class="accIcon"></span></h2>
+                  <div class="text calculator">
+                     <div class="calculatorContainer border rounded shadow">
+                        <div id="screen" class=""></div>
+                        <div class="functionButtons">
+                           <div id="clearScreen">C</div>
+                           <div id="deleteChar"><i class="fas fa-long-arrow-alt-left" id="backspace"></i></div>
+                        </div>
+                        <div class="calcButtons ">
+                           <div>7</div>
+                           <div>8</div>
+                           <div>9</div>
+                           <div>÷</div>
+                           <div>4</div>
+                           <div>5</div>
+                           <div>6</div>
+                           <div>*</div>
+                           <div>1</div>
+                           <div>2</div>
+                           <div>3</div>
+                           <div>-</div>
+                           <div>.</div>
+                           <div id="zeroBtn">0</div>
+                           <div id="result">=</div>
+                           <div>+</div>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="item">
+                  <h2 class="accordionTitle">Interactive map <span class="accIcon"></span></h2>
+                  <div class="text">
+                     <div class="mapContainer">
+                        <div class="map-image">
+                           <img id="wawa" src="img/wawa1.png">
+                        </div>
+                        <div class="mapButtons">
+                           <button id="map5" class="btn d-flex justify-content-center">Palace</button>
+                           <button id="map1" class="btn  d-flex justify-content-center">Train
+                           Station</button>
+                           <button id="map2" class="btn  d-flex justify-content-center">Gallery</button>
+                           <button id="map3" class="btn  d-flex justify-content-center">Skyscrapers</button>
+                           <button id="map4" class="btn d-flex justify-content-center">Palace
+                           surroundings</button>
+                        </div>
+                     </div>
+                  </div>
+               </li>
+               <li class="item">
+                  <h2 class="accordionTitle">Currency Converter <span class="accIcon"></span></h2>
+                  <div class="text">
+                     <div class="converter border rounded ">
+                        <form id="converterForm" class="formContainer">
+                           <input type="number" name="amount" id="amount" placeholder="Amount" step=".01"
+                              max="99999999">
+                           <select name="firstCurrency" id="firstCurrency" class="form-select">
+                              <option value="usd">USD</option>
+                              <option value="gbp">GBP</option>
+                              <option value="pln">PLN</option>
+                              <option value="eur">EUR</option>
+                              <option value="jpy">JPY</option>
+                              <option value="chf">CHF</option>
+                              <option value="cad">CAD</option>
+                              <option value="aud">AUD</option>
+                           </select>
+                           <select name="secondCurrency" id="secondCurrency">
+                              <option value="usd">USD</option>
+                              <option value="gbp">GBP</option>
+                              <option value="pln">PLN</option>
+                              <option value="eur">EUR</option>
+                              <option value="jpy">JPY</option>
+                              <option value="chf">CHF</option>
+                              <option value="cad">CAD</option>
+                              <option value="aud">AUD</option>
+                           </select>
+                           <button type="submit" id="submitConverter">Convert</button>
+                        </form>
+                        <div id="conversionResult">Result</div>
+                        <hr>
+                        <p class="converterDescription">Based on current exchange rates published by the European
+                           Central Bank 
+                        </p>
+                     </div>
+                  </div>
+               </li>
+               <li class="item">
+                  <h2 class="accordionTitle">Tic Tac Toe <span class="accIcon"></span></h2>
+                  <div class="text">
+                     <div class="board x" id="board">
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                        <div class="cell" data-cell></div>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <br> <br>
+      <div class="github">
+         <a href="https://github.com/matt765/js"> <img src="img/github.png"></a> <br>
+      </div>
+      <div class="hidden">
+         <script type="text/javascript">
+            < !--//-->
+            < ![CDATA[//><!--
+            
+                if (document.images) {
+                img1 = new Image();
+                img2 = new Image();
+                img3 = new Image();
+                img4 = new Image();
+                img5 = new Image();
+            
+                img1.src = "img/wawa2.png";
+                img2.src = "img/wawa2.png";
+                img3.src = "img/wawa2.png";
+                img2.src = "img/wawa2.png";
+                img3.src = "img/wawa2.png";
+            }
+            
+            //--><!]]>
+         </script>
+      </div>
+      <br> <br>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+      <script src="js/accordion.js"></script>
+      <script src="js/cats.js"></script>
+      <script src="js/weather.js"></script>
+      <script src="js/drinks.js"></script>
+      <script src="js/fetchtable.js"></script>
+      <script src="js/logo.js"></script>
+      <script src="js/bitcoin.js"></script>
+      <script src="js/map.js"></script>
+      <script src="js/calculator.js"></script>
+      <script src="js/tictactoe.js"></script>
+      <script src="js/converter.js"></script>
+      <script src="js/planner.js"></script>
+   </body>
+</html>
+
