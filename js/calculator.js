@@ -8,6 +8,7 @@ let secondValue = '';
 let valueCheck = 1;
 let currentOperator;
 
+
 for (let i = 0; i < calcButtons.length; i += 1) {
 	if (isNaN(calcButtons[i].innerHTML) && (calcButtons[i].innerHTML != "=")) {
 		calcButtons[i].addEventListener("click", addOperator(i));
